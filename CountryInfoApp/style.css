@@ -1,0 +1,144 @@
+.card {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Container to hold the flag, chart, countryInfo, and weather side by side */
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    /* Add space between the sections */
+    padding: 20px;
+}
+
+/* Positioning the flag */
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+/* Chart layout */
+.chart {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+/* Weather and Country Info styling */
+.weather,
+.countryInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: auto;
+    gap: 10px;
+}
+
+/* Weather-specific styles */
+.weather {
+    padding: 40px 60px;
+    gap: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.MinTemp h2,
+.MaxTemp h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #555;
+}
+
+.MinTemp p,
+.MaxTemp p {
+    margin: 0;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.MinTemp {
+    color: #88bffa;
+    text-align: center;
+}
+
+.MaxTemp {
+    color: #ffa641;
+    text-align: center;
+}
+
+/* Country info styling */
+.country {
+    font-size: 30px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.capitalcity p,
+.language p,
+.currency p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+p.fontSize {
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+}

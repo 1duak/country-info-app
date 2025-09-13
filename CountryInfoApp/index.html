@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="project.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button><img src="images/search.png" class="button"></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flag">
+            <img src="https://flagcdn.com/w320/ie.png">
+        </div>
+        <div class="chart">
+            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+        </div>
+        <div class="countryInfo">
+            <div class="country">
+                <h1>Ireland</h1>
+            </div>
+            <div class="capitalcity">
+                <p class="fontSize">Capital city:</p>
+                <div class="capitalName">
+                    <p>Dublin</p>
+                </div>
+            </div>
+            <div class="language">
+                <p class="fontSize">Language(s):</p>
+                <div class="languages">
+                    <p>Irish</p>
+                </div>
+            </div>
+            <div class="currency">
+                <p class="fontSize">Currency:</p>
+                <div class="nameAndSymbol">
+                    <p>Euro (€)</p>
+                </div>
+            </div>
+        </div>
+        <div class="weather">
+            <img src="images/clear.png" class="weather-icon">
+            <div class="MinTemp">
+                <h2>Min Temp</h2>
+                <p>-0.5°C</p>
+            </div>
+            <div class="MaxTemp">
+                <h2>Max Temp</h2>
+                <p>6.4°C</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
